@@ -1,3 +1,6 @@
+![Banner do Projeto](./print_do_sistema.png)
+
+
 # SGE-IFB  
 ## Sistema de Gestão de Eventos Acadêmicos
 
@@ -46,8 +49,3 @@ Verifique se o Python está instalado:
 
 ```powershell
 python --version
-
----
-
-## Projeto por Dentro
-![Banner do Projeto](./print_do_sistema.png)
