@@ -47,5 +47,7 @@ Verifique se o Python está instalado:
 ```powershell
 python --version
 
+---
 
+## Projeto por Dentro
 ![Banner do Projeto](./print_do_sistema.png)
