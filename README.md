@@ -1,60 +1,88 @@
-SGE-IFB: Sistema de Gestão de Eventos Acadêmicos
-Plataforma desenvolvida em Python para a organização centralizada do calendário institucional do IFB. O sistema otimiza o fluxo de eventos acadêmicos, permitindo o controle de cronogramas, categorização estratégica, monitoramento de participação e extração de métricas de desempenho organizacional através de relatórios integrados.
+SGE-IFB
+Sistema de Gestão de Eventos Acadêmicos
+
+O SGE-IFB é uma plataforma desenvolvida em Python para a organização centralizada do calendário institucional do Instituto Federal de Brasília (IFB).
+O sistema visa otimizar o fluxo de eventos acadêmicos, permitindo o controle de cronogramas, categorização estratégica, monitoramento de participação e extração de métricas de desempenho organizacional por meio de relatórios integrados.
 
 🚀 Funcionalidades
-Painel Administrativo: Interface moderna em Glassmorphism para gestão de eventos.
 
-Filtros Inteligentes: Ordenação e filtragem por categorias (Acadêmico, Cultural, Esportivo).
+Painel Administrativo
+Interface moderna baseada em Glassmorphism para gestão visual e intuitiva dos eventos.
 
-Validação Flexível: Suporte a múltiplos formatos de data (com ou sem barras).
+Filtros Inteligentes
+Ordenação e filtragem por categorias:
 
-Relatórios em Tempo Real: Métricas de participação e totalização por categoria.
+Acadêmico
 
-Controle de Presença: Sistema de check-in para eventos planejados.
+Cultural
+
+Esportivo
+
+Validação Flexível de Datas
+Suporte a múltiplos formatos de data (com ou sem barras).
+
+Relatórios em Tempo Real
+Geração de métricas de participação e totalização de eventos por categoria.
+
+Controle de Presença
+Sistema de check-in para acompanhamento da participação em eventos planejados.
 
 🛠️ Tecnologias Utilizadas
-Backend: Python e Flask.
 
-Frontend: HTML5, CSS3 (Custom Properties & Glassmorphism), JavaScript (Vanilla ES6).
+Backend: Python, Flask
 
-Ícones: Remix Icon.
+Frontend: HTML5, CSS3 (Custom Properties e Glassmorphism), JavaScript (Vanilla ES6)
+
+Ícones: Remix Icon
 
 📋 Passo a Passo para Execução
-Siga as instruções abaixo para rodar o projeto localmente no seu Windows utilizando o PowerShell.
+
+As instruções abaixo descrevem como executar o projeto localmente no Windows, utilizando o PowerShell.
 
 1. Pré-requisitos
-Certifique-se de ter o Python instalado. Você pode verificar digitando no PowerShell:
 
-PowerShell
+Certifique-se de que o Python está instalado em sua máquina:
 
 python --version
-2. Instalação do Flask
-Abra o PowerShell e instale a biblioteca necessária:
 
-PowerShell
+2. Instalação do Flask
+
+No PowerShell, execute:
 
 pip install flask
-3. Preparação dos Arquivos
-Certifique-se de que a estrutura de pastas está correta:
 
-app.py (servidor principal)
+3. Estrutura do Projeto
 
-funcoes_eventos.py (lógica de validação e dados)
+Verifique se a estrutura de arquivos está organizada da seguinte forma:
 
-/templates/index.html (interface)
-
-/static/css/style.css (estilização)
+SGE-IFB/
+│
+├── app.py                  # Servidor principal
+├── funcoes_eventos.py      # Lógica de validação e manipulação de dados
+│
+├── templates/
+│   └── index.html          # Interface do sistema
+│
+├── static/
+│   └── css/
+│       └── style.css       # Estilização do sistema
+│
+└── print_do_sistema.png    # Imagem demonstrativa
 
 4. Execução do Sistema
-Navegue até a pasta do projeto no PowerShell e execute o comando de execução direta:
 
-PowerShell
+No PowerShell, navegue até a pasta raiz do projeto e execute:
 
 python app.py
-Após o comando, o terminal exibirá: * Running on http://127.0.0.1:5000
 
-Basta copiar esse endereço e colar no seu navegador.
 
-PROJETO POR DENTRO:
+O terminal exibirá a mensagem:
+
+Running on http://127.0.0.1:5000
+
+
+Copie esse endereço e cole no navegador para acessar o sistema.
+
+📸 Projeto por Dentro
 
 ![Banner do Projeto](./print_do_sistema.png)
