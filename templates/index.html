@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFConecta - Planejador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-container">
+        <header style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h1>IFB <span>Conecta</span></h1>
+                <p>Gestão Sistêmica de Eventos</p>
+            </div>
+            <button onclick="gerarRelatorio()" class="btn-report">
+                <i class="ri-file-chart-line"></i> Relatório
+            </button>
+        </header>
+
+        <section class="form-section">
+            <input type="text" id="nome" placeholder="Nome do Evento">
+            <input type="text" id="local" placeholder="Local">
+            <input type="text" id="data" placeholder="dd/mm/aaaa">
+            <select id="categoria">
+                <option value="Academico">Acadêmico</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Esportivo">Esportivo</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <button onclick="addEvento()" class="btn-add">
+                <i class="ri-add-line"></i> Adicionar
+            </button>
+        </section>
+
+        <div class="filters">
+            <button onclick="carregarEventos('Todos')" class="btn-filter active">Todos</button>
+            <button onclick="carregarEventos('Academico')" class="btn-filter">Acadêmico</button>
+            <button onclick="carregarEventos('Cultural')" class="btn-filter">Cultural</button>
+            <button onclick="carregarEventos('Esportivo')" class="btn-filter">Esportivo</button>
+        </div>
+
+        <div id="eventos-lista" class="grid-eventos">
+            </div>
+        
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
