@@ -54,3 +54,5 @@ python app.py
 Após o comando, o terminal exibirá: * Running on http://127.0.0.1:5000
 
 Basta copiar esse endereço e colar no seu navegador.
+
+![Banner do Projeto](./print_do_sistema.png)
